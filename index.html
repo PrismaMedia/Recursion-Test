@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bucket Sort</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        background: #2E94B9;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .center {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      #number {
+        color: #333;
+        text-align: center;
+        border: 3px #333 solid;
+        padding: 5px;
+      }
+      
+      #button{
+        background: white; 
+        color: #333;
+        border: 2px solid #333; 
+        border-radius: 20px;
+        height: 30px; 
+        width: 80px;
+      }
+      
+      #button:hover {
+        background-color: #333;
+        color: white;
+        transition: all 450ms ease-in-out;
+      }
+      
+      #display {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+<!-- Styles by Varun Khatri-->
+    </style>
+  </head>
+  <body onload = "initial()">
+      <div class="container">
+        <div class="center">
+          <h1>Bucket Sort</h1>
+          <button id="button" onclick="bsort();">Sort</button>
+          <p id="display">Input: 0.5,0.23,0.1,0.3,0.9,0.2,0.39</p>
+        </div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>

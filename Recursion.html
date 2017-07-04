@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nav Sequence</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <style type="text/css">
+      body {
+        background: #2E94B9;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      .center {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      #number {
+        color: #333;
+        text-align: center;
+        border: 3px #333 solid;
+        padding: 5px;
+      }
+      
+      #button{
+        background: white; 
+        color: #333;
+        border: 2px solid #333; 
+        border-radius: 20px;
+        height: 30px; 
+        width: 80px;
+      }
+      
+      #button:hover {
+        background-color: #333;
+        color: white;
+        transition: all 450ms ease-in-out;
+      }
+      
+      #display {
+        margin-top: 10px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="center">
+          <h1>Nav Sequence</h1>
+          <input type="number" id="number" placeholder="Term number"/>
+          <p id="display"></p>
+          <button id="button" onclick="display();">Answer</button>
+          <br>
+          <button id="button" onclick="refresh();">Reset</button>
+          <br>
+          <button id="button" onclick="help();">More Info</button>
+          <br>
+          <p id="one" class="hide">a series of numbers where each number is sum of the power of itself and the preceding answer.</p>
+          <p id="two" class="hide">e.g 2^2 +1 = 5</p>
+          <p id="three" class="hide">3^3 +5 = 32</p>
+        </div>
+      </div>
+      <script src="Rscript.js"></script>
+  </body>
+</html>
